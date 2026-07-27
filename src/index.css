@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+:root {
+
+  /* colors */
+  --white: #ffffff;
+  --light-gray: #e5e5e5;
+  --white-800: #ffffff / 87%;
+  --white-600: #ffffff / 60%;
+  --white-100: #ffffff / 8%;
+  --blue: #93a9ff;
+  --dark-gray: #212121;
+  --dark-gray-800: #212121 / 87%;
+  --dark-gray-600: #212121 / 60%;
+  --dark-gray-100: #212121 / 8%;
+  --dark-blue-grey: #181824;
+  --blue-grey: #25273c;
+  
+  /* font-size */
+  --body-1: 18px;
+  --body-2: 16px;
+  --subtext: 17px;
+  --button: 16px;
+}
+
+@font-face {
+  font-family: "kanit-light";
+  src: url("./assets/fonts/Kanit-Light.ttf");
+}
+
+@font-face {
+  font-family: "kanit-medium";
+  src: url("./assets/fonts/Kanit-Regular.ttf");
+}
+
+@font-face {
+  font-family: "kanit-regular";
+  src: url("./assets/fonts/Kanit-Regular.ttf");
+}
