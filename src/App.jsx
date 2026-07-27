@@ -1,12 +1,10 @@
-import styles from './App.css'
+import './App.css'
 
 function App() {
-
+  
   return (
     <>
-     <body>
-      <div className={styles.bodyContainer}>a</div>
-     </body>
+      
     </>
   )
 }
