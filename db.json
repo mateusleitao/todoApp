@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "William Jones",
+      "email": "william_jones@mail.com",
+      "phone": "+1 (304) 709-9838"
+    },
+    {
+      "id": 2,
+      "name": "Lisa Wilson",
+      "email": "lisa.wilson28@email.com",
+      "phone": "+1 (879) 981-8959"
+    },
+    {
+      "id": 3,
+      "name": "Mia Johnson",
+      "email": "mia_johnson@yahoo.com",
+      "phone": "+1 (630) 740-3050"
+    },
+    {
+      "id": 4,
+      "name": "Betty Harris",
+      "email": "betty_harris@company.com",
+      "phone": "+1 (305) 768-6075"
+    },
+    {
+      "id": 5,
+      "name": "Karen Anderson",
+      "email": "karenanderson@email.com",
+      "phone": "+1 (350) 275-5936"
+    }
+  ]
+}

@@ -23,6 +23,10 @@
   border: 2px solid var(--blue);
 }
 
+/* .todoInsert::placeholder{
+    opacity: ;
+} */
+
 .insertBtn {
   box-sizing: border-box;
   position: absolute;
