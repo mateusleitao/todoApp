@@ -4,6 +4,9 @@ import axios from "axios";
 
 function Card() {
   const [data, setData] = useState([]);
+  const [value, setValue] = useState({
+    todoActivity: "",
+  });
 
   useEffect(() => {
     axios
@@ -11,6 +14,16 @@ function Card() {
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios
+      .post("http://localhost:3000/users", value)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <>
@@ -20,13 +33,22 @@ function Card() {
             type="text"
             className={styles.todoInsert}
             placeholder="Create a new todo..."
+            onChange={(e) =>
+              setValue({ ...value, todoActivity: e.target.value })
+            }
           ></input>
-          <button className={styles.insertBtn}>Add todo</button>
+          <button
+            className={styles.insertBtn}
+            type="submit"
+            onClick={handleSubmit}
+          >
+            Add todo
+          </button>
         </header>
         <div className={styles.todoListContainer}>
           <ul className={styles.todoList}>
-            {data.map((api, key) => (
-              <li key={api.id}>{api.name}</li>
+            {data.map((list, key) => (
+              <li key={list.id}>{list.todoActivity}</li>
             ))}
           </ul>
         </div>
