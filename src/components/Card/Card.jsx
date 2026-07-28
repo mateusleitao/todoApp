@@ -48,7 +48,10 @@ function Card() {
         <div className={styles.todoListContainer}>
           <ul className={styles.todoList}>
             {data.map((list, key) => (
-              <li key={list.id}>{list.todoActivity}</li>
+              <li key={list.id} className={styles.itemList}>
+                <input type="checkbox" classname={styles.checkList} />
+                {list.todoActivity}
+              </li>
             ))}
           </ul>
         </div>
